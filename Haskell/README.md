@@ -2,7 +2,7 @@
 
 ### Assignment 1 : Functions and Recursion
 
-### Assignment 2
+### Assignment 2 : Data Types and Parser
 
-### Assginment 3
+### Assginment 3 : IO/Monads
 
