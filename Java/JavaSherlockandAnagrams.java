@@ -1,3 +1,4 @@
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -10,7 +11,7 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-class Result {
+class JavaSherlockandAnagrams {
 
     /*
      * Complete the 'sherlockAndAnagrams' function below.
@@ -48,29 +49,3 @@ class Result {
         }
     
     }
-    
-    public class Solution {
-        public static void main(String[] args) throws IOException {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
-    
-            int q = Integer.parseInt(bufferedReader.readLine().trim());
-    
-            IntStream.range(0, q).forEach(qItr -> {
-                try {
-                    String s = bufferedReader.readLine();
-    
-                    int result = Result.sherlockAndAnagrams(s);
-    
-                    bufferedWriter.write(String.valueOf(result));
-                    bufferedWriter.newLine();
-                } catch (IOException ex) {
-                    throw new RuntimeException(ex);
-                }
-            });
-    
-            bufferedReader.close();
-            bufferedWriter.close();
-        }
-    }
-    

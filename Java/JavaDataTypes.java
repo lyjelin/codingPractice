@@ -1,9 +1,10 @@
+
 import java.util.*;
 import java.io.*;
 
 
 
-class Solution{
+class JavaDataTypes{
     public static void main(String []argh)
     {
         Scanner sc = new Scanner(System.in);
