@@ -6,5 +6,3 @@ My coding practices
 - Haskell
 
 ## Alogorithm Study
-
-- Greedy
