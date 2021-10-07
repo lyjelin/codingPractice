@@ -6,3 +6,7 @@ My coding practices
 - Haskell
 
 ## Alogorithm Study
+
+- dynamic
+- greedy
+- sorting
