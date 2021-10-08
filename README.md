@@ -7,4 +7,6 @@ My coding practices
 
 ## Alogorithm Study
 
-- Greedy
+- dynamic
+- greedy
+- sorting
