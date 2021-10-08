@@ -7,7 +7,7 @@ public class JavaGreedyMaxMin {
             
             int unfairness = Integer.MAX_VALUE;
             
-            for (int i=0;i<arr.size()-k;i++){
+            for (int i=0;i<arr.size()-k+1;i++){
                 int min = arr.get(i);
                 int max = arr.get(i+k-1);
                 int x = max - min;
