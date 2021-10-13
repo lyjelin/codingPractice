@@ -16,35 +16,46 @@ public class JavaSherlokAndValidString {
             
             Collections.sort(list, Collections.reverseOrder());
             
-            List<Integer> set = new ArrayList<Integer>();
-            int i=0;
-            while(list.get(i)>0){
-                set.add(list.get(i));
-                i++;
+            List<List<Integer>> set = new ArrayList<List<Integer>>();
+            
+            int prev = list.get(0); int cur=-1;
+            int count = 1;
+            
+            for (int i=1;i<list.size();i++){
+                cur = list.get(i);
+                if (prev == cur){
+                    count++;
+                }
+                else {
+                    List<Integer> temp = new ArrayList<Integer>();
+    
+                    temp.add(prev);
+                    temp.add(count);
+                    set.add(temp);
+                    count=1;
+                }
+                prev=cur;
             }
-              int prev = set.get(0);
-      int cur; 
-      int c1=1;
-      boolean flag = true;
+            if (cur!=0) {
+              List<Integer> temp = new ArrayList<Integer>();
     
-      for (int j=0;j<set.size();j++){
-        cur = set.get(j);
-        if (prev!=cur){
-          c1++;
-          if (prev-cur>1) {
-            flag = false;
-            break;
+                    temp.add(cur);
+                    temp.add(count);
+                    set.add(temp);
+            }
+    
+      String ans="NO";
+    
+      if(set.size()<2) ans = "YES";
+      else if (set.size()==2){
+          if (set.get(1).get(0)==1 && set.get(1).get(1)==1) ans="YES";
+          else if (set.get(0).get(0)-set.get(1).get(0)==1){
+              if (set.get(0).get(1)==1) ans="YES";
           }
-        }
-        prev = cur;
       }
+      else ans="NO";
     
-     
-            String ans;
-            if (c1<2){
-              if (flag == true) ans = "YES";
-              else ans ="NO";
-            } else ans="NO";        
+           
             return ans;
             
             
