@@ -10,3 +10,4 @@ My coding practices
 - dynamic programming
 - greedy algorithm
 - sorting
+- Dictionary and HashMaps
