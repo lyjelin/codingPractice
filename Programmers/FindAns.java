@@ -1,5 +1,7 @@
+import java.util.*;
+
 public class FindAns {
-    public String solution(int[] answers) {
+    public int[] solution(int[] answers) {
         int[] answer = {};
         
         int[] p1 = {1, 2, 3, 4, 5};
