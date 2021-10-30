@@ -51,3 +51,38 @@ Abstraction is key feature of Object-orientated programming, which allows user t
 Abstract class = allows users to create functionalities that users can implement and override through subclasses.  Abstract class can be both abstract and concrete, so it provides us flexibilities. It can have constructor, and this is the one major difference between an abstract class and interface.
 
 Interface = only allow us to define functionality, not implement it. But while class can extend only one abstract class, it can take advantage of multiple interfaces. It can only have empty static methods
+
+
+## What is Serialization?
+
+It is the mechanism that can save the state of an object by converting it to a byte stream. 
+
+## Wrapper Class
+
+Int - Integer | char - Character
+
+Wrapper class provides a mechanism to convert primitive type to object and object to primitive type. The wrapper class is included in java.lang package and also provide auto boxing and unboxing feature; where auto-boxing allows automatic conversion from primitive type to the object of its corresponding wrapper class
+
+## Define Collection?
+
+Collection is a group of elements like integer values or objects like arrays and java.util classes (Stack, Queue, Linked List)
+
+## Differentiate return and system.exit(0)?
+
+Return is a jumping statement which is used to transfer control from called method to calling method, whereas System.exit(0) is a method, which is used to come out of the program
+
+## Java8에서의 변경 사항
+
+Lambda Expression = 함수형 프로그래밍
+Also known as anonymous function
+Efficiently reduce unnecessary codes and increase the readability of written codes
+Lambda expression allowed java users to do functional programming in java
+
+Stream API = 데이터의 추상화
+
+java.time 패키지 = Joda-Time을 이용한 새로운 날짜와 시간 API
+Previously used Calendar class had some problems like; it doesn’t consider leap second, and calendar instance value could be modified because it is not immutable object.
+
+Nashorn = 자바스크립트 새로운 엔진
+Mozilla’s ‘Rhino’ was used as default Javascript engine. 
+Nashorn is created by Oracle, with great improvement on performance and memory management
