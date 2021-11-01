@@ -48,3 +48,7 @@ Example is Linked List
 ## Huffman Algorithm
 
 Huffman algorithm is one example of Greedy algorithm. It is well-known lossless data compressing method. Huffman code is variable-length encoding scheme for assigning binary codes depending on the frequency of characters occurring in a given text. The most frequently occurring character will have the smallest code, and the least frequently occurring character will have the largest code.
+
+## Big O
+
+Used to describe Time Complexity & Space Complexity
